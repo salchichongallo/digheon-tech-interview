@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "main": "src/server/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "run-p dev:*",
+    "dev:server": "babel-node -r node_modules/dotenv/config server",
+    "dev:client": "webpack-dev-server --hide-modules --config client/webpack.config"
+  },
+  "engines" : {
+    "node" : ">=10"
+  },
+  "dependencies": {
+    "antd": "^3.10.4",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-import": "^1.11.0",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "npm-run-all": "^4.1.3",
+    "prop-types": "^15.6.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
